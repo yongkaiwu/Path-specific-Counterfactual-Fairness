@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bayesNet>
+  <bnVariables>
+    <discreteVariable name="S" index="0" x="105" y="165">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="W" index="1" x="285" y="150">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="A" index="2" x="510" y="120">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="Y" index="3" x="600" y="240">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="US" index="4" latent="yes" x="92" y="89">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+      <category name="2" index="2"/>
+      <category name="3" index="3"/>
+      <category name="4" index="4"/>
+    </discreteVariable>
+    <discreteVariable name="UW" index="5" latent="yes" x="270" y="90">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+      <category name="2" index="2"/>
+      <category name="3" index="3"/>
+      <category name="4" index="4"/>
+    </discreteVariable>
+    <discreteVariable name="UA" index="6" latent="yes" x="465" y="31">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+      <category name="2" index="2"/>
+      <category name="3" index="3"/>
+      <category name="4" index="4"/>
+    </discreteVariable>
+    <discreteVariable name="UY" index="7" latent="yes" x="660" y="150">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+      <category name="2" index="2"/>
+      <category name="3" index="3"/>
+      <category name="4" index="4"/>
+    </discreteVariable>
+  </bnVariables>
+  <parents>
+    <parentsFor name="S">
+      <parent name="US" index="0"/>
+    </parentsFor>
+    <parentsFor name="W">
+      <parent name="S" index="0"/>
+      <parent name="UW" index="1"/>
+    </parentsFor>
+    <parentsFor name="A">
+      <parent name="W" index="0"/>
+      <parent name="UA" index="1"/>
+    </parentsFor>
+    <parentsFor name="Y">
+      <parent name="S" index="0"/>
+      <parent name="W" index="1"/>
+      <parent name="A" index="2"/>
+      <parent name="UY" index="3"/>
+    </parentsFor>
+    <parentsFor name="US"/>
+    <parentsFor name="UW"/>
+    <parentsFor name="UA"/>
+    <parentsFor name="UY"/>
+  </parents>
+  <cpts rowSumTolerance="0.0001">
+    <cpt variable="S" numRows="5" numCols="2">
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+    </cpt>
+    <cpt variable="W" numRows="10" numCols="2">
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+    </cpt>
+    <cpt variable="A" numRows="10" numCols="2">
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+    </cpt>
+    <cpt variable="Y" numRows="40" numCols="2">
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+    </cpt>
+    <cpt variable="US" numRows="1" numCols="5">
+      <row>0.0429 0.1424 0.2496 0.3111 0.2540</row>
+    </cpt>
+    <cpt variable="UW" numRows="1" numCols="5">
+      <row>0.0583 0.3352 0.3079 0.1176 0.1809</row>
+    </cpt>
+    <cpt variable="UA" numRows="1" numCols="5">
+      <row>0.2059 0.0479 0.2347 0.3412 0.1703</row>
+    </cpt>
+    <cpt variable="UY" numRows="1" numCols="5">
+      <row>0.2165 0.2979 0.2070 0.1287 0.1499</row>
+    </cpt>
+  </cpts>
+</bayesNet>

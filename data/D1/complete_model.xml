@@ -1,0 +1,1456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bayesNet>
+  <bnVariables>
+    <discreteVariable name="S" index="0" x="150" y="210">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="W" index="1" x="330" y="180">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="A" index="2" x="540" y="180">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="Y" index="3" x="690" y="285">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="USWAY" index="4" latent="yes" x="435" y="45">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+      <category name="2" index="2"/>
+      <category name="3" index="3"/>
+      <category name="4" index="4"/>
+      <category name="5" index="5"/>
+      <category name="6" index="6"/>
+      <category name="7" index="7"/>
+      <category name="8" index="8"/>
+      <category name="9" index="9"/>
+      <category name="10" index="10"/>
+      <category name="11" index="11"/>
+      <category name="12" index="12"/>
+      <category name="13" index="13"/>
+      <category name="14" index="14"/>
+      <category name="15" index="15"/>
+      <category name="16" index="16"/>
+      <category name="17" index="17"/>
+      <category name="18" index="18"/>
+      <category name="19" index="19"/>
+      <category name="20" index="20"/>
+      <category name="21" index="21"/>
+      <category name="22" index="22"/>
+      <category name="23" index="23"/>
+      <category name="24" index="24"/>
+      <category name="25" index="25"/>
+      <category name="26" index="26"/>
+      <category name="27" index="27"/>
+      <category name="28" index="28"/>
+      <category name="29" index="29"/>
+      <category name="30" index="30"/>
+      <category name="31" index="31"/>
+      <category name="32" index="32"/>
+      <category name="33" index="33"/>
+      <category name="34" index="34"/>
+      <category name="35" index="35"/>
+      <category name="36" index="36"/>
+      <category name="37" index="37"/>
+      <category name="38" index="38"/>
+      <category name="39" index="39"/>
+      <category name="40" index="40"/>
+      <category name="41" index="41"/>
+      <category name="42" index="42"/>
+      <category name="43" index="43"/>
+      <category name="44" index="44"/>
+      <category name="45" index="45"/>
+      <category name="46" index="46"/>
+      <category name="47" index="47"/>
+      <category name="48" index="48"/>
+      <category name="49" index="49"/>
+      <category name="50" index="50"/>
+      <category name="51" index="51"/>
+      <category name="52" index="52"/>
+      <category name="53" index="53"/>
+      <category name="54" index="54"/>
+      <category name="55" index="55"/>
+      <category name="56" index="56"/>
+      <category name="57" index="57"/>
+      <category name="58" index="58"/>
+      <category name="59" index="59"/>
+      <category name="60" index="60"/>
+      <category name="61" index="61"/>
+      <category name="62" index="62"/>
+      <category name="63" index="63"/>
+      <category name="64" index="64"/>
+      <category name="65" index="65"/>
+      <category name="66" index="66"/>
+      <category name="67" index="67"/>
+      <category name="68" index="68"/>
+      <category name="69" index="69"/>
+      <category name="70" index="70"/>
+      <category name="71" index="71"/>
+      <category name="72" index="72"/>
+      <category name="73" index="73"/>
+      <category name="74" index="74"/>
+      <category name="75" index="75"/>
+      <category name="76" index="76"/>
+      <category name="77" index="77"/>
+      <category name="78" index="78"/>
+      <category name="79" index="79"/>
+      <category name="80" index="80"/>
+      <category name="81" index="81"/>
+      <category name="82" index="82"/>
+      <category name="83" index="83"/>
+      <category name="84" index="84"/>
+      <category name="85" index="85"/>
+      <category name="86" index="86"/>
+      <category name="87" index="87"/>
+      <category name="88" index="88"/>
+      <category name="89" index="89"/>
+      <category name="90" index="90"/>
+      <category name="91" index="91"/>
+      <category name="92" index="92"/>
+      <category name="93" index="93"/>
+      <category name="94" index="94"/>
+      <category name="95" index="95"/>
+      <category name="96" index="96"/>
+      <category name="97" index="97"/>
+      <category name="98" index="98"/>
+      <category name="99" index="99"/>
+    </discreteVariable>
+  </bnVariables>
+  <parents>
+    <parentsFor name="S">
+      <parent name="USWAY" index="0"/>
+    </parentsFor>
+    <parentsFor name="W">
+      <parent name="S" index="0"/>
+      <parent name="USWAY" index="1"/>
+    </parentsFor>
+    <parentsFor name="A">
+      <parent name="W" index="0"/>
+      <parent name="USWAY" index="1"/>
+    </parentsFor>
+    <parentsFor name="Y">
+      <parent name="S" index="0"/>
+      <parent name="W" index="1"/>
+      <parent name="A" index="2"/>
+      <parent name="USWAY" index="3"/>
+    </parentsFor>
+    <parentsFor name="USWAY"/>
+  </parents>
+  <cpts rowSumTolerance="0.0001">
+    <cpt variable="S" numRows="100" numCols="2">
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+    </cpt>
+    <cpt variable="W" numRows="200" numCols="2">
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+    </cpt>
+    <cpt variable="A" numRows="200" numCols="2">
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+    </cpt>
+    <cpt variable="Y" numRows="800" numCols="2">
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>1.0 0.0</row>
+      <row>1.0 0.0</row>
+      <row>0.0 1.0</row>
+      <row>0.0 1.0</row>
+    </cpt>
+    <cpt variable="USWAY" numRows="1" numCols="100">
+      <row>0.0057 0.0078 0.0068 0.0110 0.0116 0.0019 0.0214 0.0207 0.0116 0.0199 0.0004 0.0133 0.0093 0.0125 0.0169 0.0040 0.0200 0.0031 0.0039 0.0143 0.0061 0.0086 0.0132 0.0229 0.0149 0.0155 0.0048 0.0194 0.0181 0.0080 0.0121 0.0030 0.0111 0.0045 0.0024 0.0128 0.0187 0.0061 0.0056 0.0014 0.0092 0.0009 0.0117 0.0009 0.0135 0.0170 0.0011 0.0004 0.0092 0.0040 0.0120 0.0222 0.0017 0.0115 0.0036 0.0211 0.0051 0.0167 0.0061 0.0179 0.0116 0.0043 0.0103 0.0019 0.0178 0.0055 0.0010 0.0078 0.0175 0.0077 0.0013 0.0066 0.0122 0.0111 0.0221 0.0029 0.0077 0.0119 0.0010 0.0053 0.0068 0.0180 0.0049 0.0119 0.0136 0.0147 0.0077 0.0005 0.0002 0.0062 0.0177 0.0191 0.0208 0.0068 0.0218 0.0045 0.0115 0.0035 0.0194 0.0119</row>
+    </cpt>
+  </cpts>
+</bayesNet>

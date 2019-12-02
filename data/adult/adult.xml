@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bayesNet>
+  <bnVariables>
+    <discreteVariable name="age" index="0" x="150" y="90">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="sex" index="1" x="238" y="99">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="education" index="2" x="75" y="255">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="marital-status" index="3" x="328" y="265">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="hours" index="4" x="165" y="330">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="workclass" index="5" x="418" y="265">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+    <discreteVariable name="income" index="6" x="148" y="431">
+      <category name="0" index="0"/>
+      <category name="1" index="1"/>
+    </discreteVariable>
+  </bnVariables>
+  <parents>
+    <parentsFor name="age"/>
+    <parentsFor name="sex"/>
+    <parentsFor name="education">
+      <parent name="age" index="0"/>
+    </parentsFor>
+    <parentsFor name="marital-status">
+      <parent name="age" index="0"/>
+      <parent name="sex" index="1"/>
+      <parent name="education" index="2"/>
+    </parentsFor>
+    <parentsFor name="hours">
+      <parent name="age" index="0"/>
+      <parent name="sex" index="1"/>
+      <parent name="education" index="2"/>
+      <parent name="marital-status" index="3"/>
+      <parent name="workclass" index="4"/>  
+    </parentsFor>
+    <parentsFor name="workclass">
+      <parent name="age" index="0"/>
+      <parent name="education" index="1"/>
+      <parent name="marital-status" index="2"/>
+    </parentsFor>
+    <parentsFor name="income">
+      <parent name="age" index="0"/>
+      <parent name="sex" index="1"/>
+      <parent name="education" index="2"/>
+      <parent name="marital-status" index="3"/>
+      <parent name="hours" index="4"/>
+      <parent name="workclass" index="5"/>
+    </parentsFor>
+  </parents>
+  <cpts rowSumTolerance="0.0001">
+    <cpt variable="age" numRows="1" numCols="2">
+      <row>0.4344 0.5656</row>
+    </cpt>
+    <cpt variable="sex" numRows="1" numCols="2">
+      <row>0.2695 0.7305</row>
+    </cpt>
+    <cpt variable="education" numRows="2" numCols="2">
+      <row>0.4098 0.5902</row>
+      <row>0.3609 0.6391</row>
+    </cpt>
+    <cpt variable="marital-status" numRows="8" numCols="2">
+      <row>0.8435 0.1565</row>
+      <row>0.7769 0.2231</row>
+      <row>0.5078 0.4922</row>
+      <row>0.4100 0.5900</row>
+      <row>0.7570 0.2430</row>
+      <row>0.6786 0.3214</row>
+      <row>0.1823 0.8177</row>
+      <row>0.1491 0.8509</row>
+    </cpt>
+    <cpt variable="hours" numRows="32" numCols="2">
+      <row>0.8966 0.1034</row>
+      <row>0.8659 0.1341</row>
+      <row>0.8144 0.1856</row>
+      <row>0.7600 0.2400</row>
+      <row>0.9045 0.0955</row>
+      <row>0.9528 0.0472</row>
+      <row>0.8093 0.1907</row>
+      <row>0.7792 0.2208</row>
+      <row>0.7899 0.2101</row>
+      <row>0.6071 0.3929</row>
+      <row>0.6794 0.3206</row>
+      <row>0.4770 0.5230</row>
+      <row>0.7180 0.2820</row>
+      <row>0.5449 0.4551</row>
+      <row>0.6654 0.3346</row>
+      <row>0.4639 0.5361</row>
+      <row>0.8532 0.1468</row>
+      <row>0.8842 0.1158</row>
+      <row>0.6962 0.3038</row>
+      <row>0.7822 0.2178</row>
+      <row>0.8658 0.1342</row>
+      <row>0.9075 0.0925</row>
+      <row>0.6720 0.3280</row>
+      <row>0.7494 0.2506</row>
+      <row>0.6993 0.3007</row>
+      <row>0.6447 0.3553</row>
+      <row>0.5252 0.4748</row>
+      <row>0.4957 0.5043</row>
+      <row>0.6957 0.3043</row>
+      <row>0.6024 0.3976</row>
+      <row>0.5318 0.4682</row>
+      <row>0.5258 0.4742</row>
+    </cpt>
+    <cpt variable="workclass" numRows="8" numCols="2">
+      <row>0.8108 0.1892</row>
+      <row>0.7822 0.2178</row>
+      <row>0.7403 0.2597</row>
+      <row>0.7223 0.2777</row>
+      <row>0.7230 0.2770</row>
+      <row>0.6426 0.3574</row>
+      <row>0.6098 0.3902</row>
+      <row>0.5563 0.4437</row>
+    </cpt>
+    <cpt variable="income" numRows="64" numCols="2">
+      <row>0.9872 0.0128</row>
+      <row>0.9319 0.0681</row>
+      <row>0.6080 0.3920</row>
+      <row>0.4394 0.5606</row>
+      <row>0.9288 0.0712</row>
+      <row>0.6540 0.3460</row>
+      <row>0.2801 0.7199</row>
+      <row>0.1213 0.8787</row>
+      <row>0.9896 0.0104</row>
+      <row>0.9672 0.0328</row>
+      <row>0.6612 0.3388</row>
+      <row>1.0000 0.0000</row>
+      <row>0.9418 0.0582</row>
+      <row>0.6802 0.3198</row>
+      <row>0.2207 0.7793</row>
+      <row>0.1538 0.8462</row>
+      <row>0.9758 0.0242</row>
+      <row>0.9216 0.0784</row>
+      <row>0.6607 0.3393</row>
+      <row>0.4707 0.5293</row>
+      <row>0.8836 0.1164</row>
+      <row>0.6362 0.3638</row>
+      <row>0.3198 0.6802</row>
+      <row>0.1930 0.8070</row>
+      <row>0.9558 0.0442</row>
+      <row>0.6747 0.3253</row>
+      <row>0.5879 0.4121</row>
+      <row>0.3969 0.6031</row>
+      <row>0.9171 0.0829</row>
+      <row>0.6352 0.3648</row>
+      <row>0.3515 0.6485</row>
+      <row>0.2175 0.7825</row>
+      <row>0.9360 0.0640</row>
+      <row>0.8454 0.1546</row>
+      <row>0.4345 0.5655</row>
+      <row>0.5942 0.4058</row>
+      <row>0.7778 0.2222</row>
+      <row>0.4808 0.5192</row>
+      <row>0.1482 0.8518</row>
+      <row>0.0945 0.9055</row>
+      <row>0.9106 0.0894</row>
+      <row>0.7500 0.2500</row>
+      <row>0.3217 0.6783</row>
+      <row>0.6875 0.3125</row>
+      <row>0.7654 0.2346</row>
+      <row>0.4684 0.5316</row>
+      <row>0.1573 0.8427</row>
+      <row>0.1538 0.8462</row>
+      <row>0.8679 0.1321</row>
+      <row>0.6284 0.3716</row>
+      <row>0.4655 0.5345</row>
+      <row>0.3032 0.6968</row>
+      <row>0.5608 0.4392</row>
+      <row>0.3384 0.6616</row>
+      <row>0.1755 0.8245</row>
+      <row>0.0998 0.9002</row>
+      <row>0.8440 0.1560</row>
+      <row>0.6811 0.3189</row>
+      <row>0.5146 0.4854</row>
+      <row>0.3532 0.6468</row>
+      <row>0.6135 0.3865</row>
+      <row>0.3171 0.6829</row>
+      <row>0.1808 0.8192</row>
+      <row>0.1237 0.8763</row>
+    </cpt>
+  </cpts>
+</bayesNet>
